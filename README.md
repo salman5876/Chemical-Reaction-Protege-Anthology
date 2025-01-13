@@ -13,7 +13,7 @@ A web-based system to predict chemical reactions using Flask and Protege ontolog
 - Ontology: Protege with OWL files
 
 ## Installation
-1. Clone the repository:```
+1. Clone the repository
 2. git clone https://github.com/salman5876/Chemical-Reaction-Protege-Anthology.git
 3. Navigate to the project directory
 4. Install dependencies
