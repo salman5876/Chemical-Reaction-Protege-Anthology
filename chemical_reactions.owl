@@ -1,0 +1,1456 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/chemistry.owl"
+         xmlns="http://example.org/chemistry.owl#">
+
+<owl:Ontology rdf:about="http://example.org/chemistry.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_reactant">
+  <rdfs:domain rdf:resource="#Reaction"/>
+  <rdfs:range rdf:resource="#Reactant"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_product">
+  <rdfs:domain rdf:resource="#Reaction"/>
+  <rdfs:range rdf:resource="#Product"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Reactant">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Product">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Reaction">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#H2_and_O2_to_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#H2"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#O2">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2O">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C_and_O2_to_CO2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CO2">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH4_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#CH4"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH4">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C2H6_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C2H6"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C2H6">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C3H8_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C3H8"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C3H8">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C4H10_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C4H10"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C4H10">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C5H12_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C5H12"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C5H12">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H14_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C6H14"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H14">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C7H16_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C7H16"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C7H16">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C8H18_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C8H18"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C8H18">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C2H2_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C2H2"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C2H2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C3H4_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C3H4"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C3H4">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C5H10_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C5H10"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C5H10">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H10_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C6H10"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H10">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C7H8_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C7H8"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C7H8">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Na_and_Cl2_to_NaCl">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Na"/>
+  <has_reactant rdf:resource="#Cl2"/>
+  <has_product rdf:resource="#NaCl"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Na">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cl2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#NaCl">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mg_and_O2_to_MgO">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2Mg"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#2MgO"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2Mg">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2MgO">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Al_and_Cl2_to_AlCl3">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2Al"/>
+  <has_reactant rdf:resource="#3Cl2"/>
+  <has_product rdf:resource="#2AlCl3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2Al">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3Cl2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2AlCl3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fe_and_S_to_FeS">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Fe"/>
+  <has_reactant rdf:resource="#S"/>
+  <has_product rdf:resource="#FeS"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fe">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#S">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FeS">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zn_and_S_to_ZnS">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Zn"/>
+  <has_reactant rdf:resource="#S"/>
+  <has_product rdf:resource="#ZnS"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zn">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ZnS">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fe_and_O2_to_Fe2O3">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#4Fe"/>
+  <has_reactant rdf:resource="#3O2"/>
+  <has_product rdf:resource="#2Fe2O3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#4Fe">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3O2">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2Fe2O3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#K_and_Br2_to_KBr">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2K"/>
+  <has_reactant rdf:resource="#Br2"/>
+  <has_product rdf:resource="#2KBr"/>
+  <has_reactant rdf:resource="#K"/>
+  <has_product rdf:resource="#KBr"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2K">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Br2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2KBr">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ca_and_O2_to_CaO">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Ca"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CaO"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ca">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CaO">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cu_and_S_to_CuS">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Cu"/>
+  <has_reactant rdf:resource="#S"/>
+  <has_product rdf:resource="#CuS"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cu">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CuS">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Li_and_Cl2_to_LiCl">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2Li"/>
+  <has_reactant rdf:resource="#Cl2"/>
+  <has_product rdf:resource="#2LiCl"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2Li">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2LiCl">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Na_and_S_to_Na2S">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2Na"/>
+  <has_reactant rdf:resource="#S"/>
+  <has_product rdf:resource="#Na2S"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2Na">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Na2S">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Al_and_N2_to_AlN">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Al"/>
+  <has_reactant rdf:resource="#N2"/>
+  <has_product rdf:resource="#AlN"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Al">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#N2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AlN">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mg_and_F2_to_MgF2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Mg"/>
+  <has_reactant rdf:resource="#F2"/>
+  <has_product rdf:resource="#MgF2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mg">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MgF2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#K">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#KBr">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ca_and_Cl2_to_CaCl2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Ca"/>
+  <has_reactant rdf:resource="#Cl2"/>
+  <has_product rdf:resource="#CaCl2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CaCl2">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fe_and_Br2_to_FeBr3">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2Fe"/>
+  <has_reactant rdf:resource="#3Br2"/>
+  <has_product rdf:resource="#2FeBr3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2Fe">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3Br2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2FeBr3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ba_and_S_to_BaS">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Ba"/>
+  <has_reactant rdf:resource="#S"/>
+  <has_product rdf:resource="#BaS"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ba">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BaS">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mg_and_N2_to_Mg3N2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#3Mg"/>
+  <has_reactant rdf:resource="#N2"/>
+  <has_product rdf:resource="#Mg3N2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3Mg">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mg3N2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HCl_and_NaOH_to_NaCl_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#HCl"/>
+  <has_reactant rdf:resource="#NaOH"/>
+  <has_product rdf:resource="#NaCl"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HCl">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#NaOH">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2SO4_and_NaOH_to_Na2SO4_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#H2SO4"/>
+  <has_reactant rdf:resource="#2NaOH"/>
+  <has_product rdf:resource="#Na2SO4"/>
+  <has_product rdf:resource="#2H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2SO4">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2NaOH">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Na2SO4">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2H2O">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HNO3_and_KOH_to_KNO3_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#HNO3"/>
+  <has_reactant rdf:resource="#KOH"/>
+  <has_product rdf:resource="#KNO3"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HNO3">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#KOH">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#KNO3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H3PO4_and_NaOH_to_Na3PO4_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#H3PO4"/>
+  <has_reactant rdf:resource="#3NaOH"/>
+  <has_product rdf:resource="#Na3PO4"/>
+  <has_product rdf:resource="#3H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H3PO4">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3NaOH">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Na3PO4">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3H2O">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2SO4_and_BaOH2_to_BaSO4_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#H2SO4"/>
+  <has_reactant rdf:resource="#Ba(OH)2"/>
+  <has_product rdf:resource="#BaSO4"/>
+  <has_product rdf:resource="#2H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ba(OH)2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BaSO4">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3COOH_and_NaOH_to_CH3COONa_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#CH3COOH"/>
+  <has_reactant rdf:resource="#NaOH"/>
+  <has_product rdf:resource="#CH3COONa"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3COOH">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3COONa">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2CO3_and_NaOH_to_Na2CO3_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#H2CO3"/>
+  <has_reactant rdf:resource="#2NaOH"/>
+  <has_product rdf:resource="#Na2CO3"/>
+  <has_product rdf:resource="#2H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2CO3">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Na2CO3">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HClO4_and_NaOH_to_NaClO4_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#HClO4"/>
+  <has_reactant rdf:resource="#NaOH"/>
+  <has_product rdf:resource="#NaClO4"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HClO4">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#NaClO4">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HF_and_KOH_to_KF_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#HF"/>
+  <has_reactant rdf:resource="#KOH"/>
+  <has_product rdf:resource="#KF"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HF">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#KF">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2SO3_and_NaOH_to_Na2SO3_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#H2SO3"/>
+  <has_reactant rdf:resource="#2NaOH"/>
+  <has_product rdf:resource="#Na2SO3"/>
+  <has_product rdf:resource="#2H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2SO3">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Na2SO3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HNO3_and_NH3_to_NH4NO3">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#HNO3"/>
+  <has_reactant rdf:resource="#NH3"/>
+  <has_product rdf:resource="#NH4NO3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#NH3">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#NH4NO3">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H3PO4_and_KOH_to_KH2PO4_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#H3PO4"/>
+  <has_reactant rdf:resource="#KOH"/>
+  <has_product rdf:resource="#KH2PO4"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#KH2PO4">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2SO4_and_NH4OH_to_NH4SO4_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#H2SO4"/>
+  <has_reactant rdf:resource="#2NH4OH"/>
+  <has_product rdf:resource="#(NH4)2SO4"/>
+  <has_product rdf:resource="#2H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2NH4OH">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#(NH4)2SO4">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2CO3_and_CaOH2_to_CaCO3_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#H2CO3"/>
+  <has_reactant rdf:resource="#Ca(OH)2"/>
+  <has_product rdf:resource="#CaCO3"/>
+  <has_product rdf:resource="#2H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ca(OH)2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CaCO3">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3COOH_and_KOH_to_CH3COOK_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#CH3COOH"/>
+  <has_reactant rdf:resource="#KOH"/>
+  <has_product rdf:resource="#CH3COOK"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3COOK">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AgNO3_and_NaCl_to_AgCl_NaNO3">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#AgNO3"/>
+  <has_reactant rdf:resource="#NaCl"/>
+  <has_product rdf:resource="#AgCl"/>
+  <has_product rdf:resource="#NaNO3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AgNO3">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AgCl">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#NaNO3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BaCl2_and_Na2SO4_to_BaSO4_NaCl">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#BaCl2"/>
+  <has_reactant rdf:resource="#Na2SO4"/>
+  <has_product rdf:resource="#BaSO4"/>
+  <has_product rdf:resource="#2NaCl"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BaCl2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2NaCl">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CaCl2_and_Na2CO3_to_CaCO3_NaCl">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#CaCl2"/>
+  <has_reactant rdf:resource="#Na2CO3"/>
+  <has_product rdf:resource="#CaCO3"/>
+  <has_product rdf:resource="#2NaCl"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PbNO32_and_KI_to_PbI2_KNO3">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Pb(NO3)2"/>
+  <has_reactant rdf:resource="#KI"/>
+  <has_product rdf:resource="#PbI2"/>
+  <has_product rdf:resource="#2KNO3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pb(NO3)2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#KI">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PbI2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2KNO3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MgSO4_and_Na2CO3_to_MgCO3_Na2SO4">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#MgSO4"/>
+  <has_reactant rdf:resource="#Na2CO3"/>
+  <has_product rdf:resource="#MgCO3"/>
+  <has_product rdf:resource="#Na2SO4"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MgSO4">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MgCO3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FeCl3_and_NaOH_to_FeOH3_NaCl">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#FeCl3"/>
+  <has_reactant rdf:resource="#NaOH"/>
+  <has_product rdf:resource="#Fe(OH)3"/>
+  <has_product rdf:resource="#NaCl"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FeCl3">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fe(OH)3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ZnSO4_and_NaOH_to_ZnOH2_Na2SO4">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#ZnSO4"/>
+  <has_reactant rdf:resource="#NaOH"/>
+  <has_product rdf:resource="#Zn(OH)2"/>
+  <has_product rdf:resource="#Na2SO4"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ZnSO4">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zn(OH)2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CaNO32_and_Na3PO4_to_Ca3PO42_NaNO3">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Ca(NO3)2"/>
+  <has_reactant rdf:resource="#Na3PO4"/>
+  <has_product rdf:resource="#Ca3(PO4)2"/>
+  <has_product rdf:resource="#NaNO3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ca(NO3)2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ca3(PO4)2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AlCl3_and_NaOH_to_AlOH3_NaCl">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#AlCl3"/>
+  <has_reactant rdf:resource="#NaOH"/>
+  <has_product rdf:resource="#Al(OH)3"/>
+  <has_product rdf:resource="#NaCl"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AlCl3">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Al(OH)3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#K2CrO4_and_BaCl2_to_BaCrO4_KCl">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#K2CrO4"/>
+  <has_reactant rdf:resource="#BaCl2"/>
+  <has_product rdf:resource="#BaCrO4"/>
+  <has_product rdf:resource="#2KCl"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#K2CrO4">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BaCrO4">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2KCl">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CuSO4_and_NaOH_to_CuOH2_Na2SO4">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#CuSO4"/>
+  <has_reactant rdf:resource="#NaOH"/>
+  <has_product rdf:resource="#Cu(OH)2"/>
+  <has_product rdf:resource="#Na2SO4"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CuSO4">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cu(OH)2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FeSO4_and_NaOH_to_FeOH2_Na2SO4">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#FeSO4"/>
+  <has_reactant rdf:resource="#NaOH"/>
+  <has_product rdf:resource="#Fe(OH)2"/>
+  <has_product rdf:resource="#Na2SO4"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FeSO4">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fe(OH)2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CaOH2_and_CO2_to_CaCO3_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Ca(OH)2"/>
+  <has_reactant rdf:resource="#CO2"/>
+  <has_product rdf:resource="#CaCO3"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AgNO3_and_KBr_to_AgBr_KNO3">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#AgNO3"/>
+  <has_reactant rdf:resource="#KBr"/>
+  <has_product rdf:resource="#AgBr"/>
+  <has_product rdf:resource="#KNO3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AgBr">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BaNO32_and_Na2SO4_to_BaSO4_NaNO3">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Ba(NO3)2"/>
+  <has_reactant rdf:resource="#Na2SO4"/>
+  <has_product rdf:resource="#BaSO4"/>
+  <has_product rdf:resource="#2NaNO3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ba(NO3)2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2NaNO3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#KClO3_to_KCl_O2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2KClO3"/>
+  <has_product rdf:resource="#2KCl"/>
+  <has_product rdf:resource="#3O2"/>
+  <has_reactant rdf:resource="#KClO3"/>
+  <has_product rdf:resource="#KCl"/>
+  <has_product rdf:resource="#O2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2KClO3">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2O2_to_H2O_O2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2H2O2"/>
+  <has_product rdf:resource="#2H2O"/>
+  <has_product rdf:resource="#O2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2H2O2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cu_and_AgNO3_to_Ag_CuNO32">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Cu"/>
+  <has_reactant rdf:resource="#2AgNO3"/>
+  <has_product rdf:resource="#2Ag"/>
+  <has_product rdf:resource="#Cu(NO3)2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2AgNO3">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2Ag">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Cu(NO3)2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zn_and_CuSO4_to_ZnSO4_Cu">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Zn"/>
+  <has_reactant rdf:resource="#CuSO4"/>
+  <has_product rdf:resource="#ZnSO4"/>
+  <has_product rdf:resource="#Cu"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fe_and_Cl2_to_FeCl3">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2Fe"/>
+  <has_reactant rdf:resource="#3Cl2"/>
+  <has_product rdf:resource="#2FeCl3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2FeCl3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Al_and_CuCl2_to_AlCl3_Cu">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2Al"/>
+  <has_reactant rdf:resource="#3CuCl2"/>
+  <has_product rdf:resource="#2AlCl3"/>
+  <has_product rdf:resource="#3Cu"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3CuCl2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3Cu">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2_and_CuO_to_H2O_Cu">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#H2"/>
+  <has_reactant rdf:resource="#CuO"/>
+  <has_product rdf:resource="#H2O"/>
+  <has_product rdf:resource="#Cu"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CuO">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C_and_CuO_to_CO2_Cu">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C"/>
+  <has_reactant rdf:resource="#CuO"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#Cu"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zn_and_HNO3_to_ZnNO32_H2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Zn"/>
+  <has_reactant rdf:resource="#2HNO3"/>
+  <has_product rdf:resource="#Zn(NO3)2"/>
+  <has_product rdf:resource="#H2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2HNO3">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zn(NO3)2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mg_and_FeSO4_to_MgSO4_Fe">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Mg"/>
+  <has_reactant rdf:resource="#FeSO4"/>
+  <has_product rdf:resource="#MgSO4"/>
+  <has_product rdf:resource="#Fe"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sn_and_CuSO4_to_SnSO4_Cu">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Sn"/>
+  <has_reactant rdf:resource="#CuSO4"/>
+  <has_product rdf:resource="#SnSO4"/>
+  <has_product rdf:resource="#Cu"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sn">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#SnSO4">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PbO_and_C_to_Pb_CO2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2PbO"/>
+  <has_reactant rdf:resource="#C"/>
+  <has_product rdf:resource="#Pb"/>
+  <has_product rdf:resource="#CO2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2PbO">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Pb">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ag_and_HNO3_to_AgNO3_H2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2Ag"/>
+  <has_reactant rdf:resource="#2HNO3"/>
+  <has_product rdf:resource="#2AgNO3"/>
+  <has_product rdf:resource="#H2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fe_and_HCl_to_FeCl2_H2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Fe"/>
+  <has_reactant rdf:resource="#HCl"/>
+  <has_product rdf:resource="#FeCl2"/>
+  <has_product rdf:resource="#H2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FeCl2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Zn_and_HCl_to_ZnCl2_H2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#Zn"/>
+  <has_reactant rdf:resource="#2HCl"/>
+  <has_product rdf:resource="#ZnCl2"/>
+  <has_product rdf:resource="#H2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2HCl">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ZnCl2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C2H4_and_H2_to_C2H6">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C2H4"/>
+  <has_reactant rdf:resource="#H2"/>
+  <has_product rdf:resource="#C2H6"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C2H4">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C2H2_and_H2_to_C2H6">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C2H2"/>
+  <has_reactant rdf:resource="#2H2"/>
+  <has_product rdf:resource="#C2H6"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2H2">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3Cl_and_NaOH_to_CH3OH_NaCl">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#CH3Cl"/>
+  <has_reactant rdf:resource="#NaOH"/>
+  <has_product rdf:resource="#CH3OH"/>
+  <has_product rdf:resource="#NaCl"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3Cl">
+  <rdf:type rdf:resource="#Reactant"/>
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3OH">
+  <rdf:type rdf:resource="#Product"/>
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C2H5OH_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C2H5OH"/>
+  <has_reactant rdf:resource="#O2"/>
+  <has_product rdf:resource="#CO2"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C2H5OH">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H12O6_and_O2_to_CO2_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C6H12O6"/>
+  <has_reactant rdf:resource="#6O2"/>
+  <has_product rdf:resource="#6CO2"/>
+  <has_product rdf:resource="#6H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H12O6">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#6O2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#6CO2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#6H2O">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH4_and_Cl2_to_CH3Cl_HCl">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#CH4"/>
+  <has_reactant rdf:resource="#Cl2"/>
+  <has_product rdf:resource="#CH3Cl"/>
+  <has_product rdf:resource="#HCl"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H6_and_Br2_to_C6H5Br_HBr">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C6H6"/>
+  <has_reactant rdf:resource="#Br2"/>
+  <has_product rdf:resource="#C6H5Br"/>
+  <has_product rdf:resource="#HBr"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H6">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H5Br">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HBr">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3CHCH2_and_H2_to_CH3CH2CH3">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#CH3CH=CH2"/>
+  <has_reactant rdf:resource="#H2"/>
+  <has_product rdf:resource="#CH3CH2CH3"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3CH=CH2">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3CH2CH3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C2H4_and_Cl2_to_C2H4Cl2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C2H4"/>
+  <has_reactant rdf:resource="#Cl2"/>
+  <has_product rdf:resource="#C2H4Cl2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C2H4Cl2">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H6_and_CH3Cl_to_C6H5CH3_HCl">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C6H6"/>
+  <has_reactant rdf:resource="#CH3Cl"/>
+  <has_product rdf:resource="#C6H5CH3"/>
+  <has_product rdf:resource="#HCl"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H5CH3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C3H8_and_Cl2_to_C3H7Cl_HCl">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C3H8"/>
+  <has_reactant rdf:resource="#Cl2"/>
+  <has_product rdf:resource="#C3H7Cl"/>
+  <has_product rdf:resource="#HCl"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C3H7Cl">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3COOH_and_CH3OH_to_CH3COOCH3_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#CH3COOH"/>
+  <has_reactant rdf:resource="#CH3OH"/>
+  <has_product rdf:resource="#CH3COOCH3"/>
+  <has_product rdf:resource="#H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3COOCH3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H5OH_and_CH3I_to_C6H4OCH3_HI">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#C6H5OH"/>
+  <has_reactant rdf:resource="#CH3I"/>
+  <has_product rdf:resource="#C6H4OCH3"/>
+  <has_product rdf:resource="#HI"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H5OH">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CH3I">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#C6H4OCH3">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HI">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CaCO3_to_CaO_CO2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#CaCO3"/>
+  <has_product rdf:resource="#CaO"/>
+  <has_product rdf:resource="#CO2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HgO_to_Hg_O2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2HgO"/>
+  <has_product rdf:resource="#2Hg"/>
+  <has_product rdf:resource="#O2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2HgO">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2Hg">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#NH4NO3_to_N2O_H2O">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#NH4NO3"/>
+  <has_product rdf:resource="#N2O"/>
+  <has_product rdf:resource="#2H2O"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#N2O">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H2O_to_H2_O2">
+  <rdf:type rdf:resource="#Reaction"/>
+  <has_reactant rdf:resource="#2H2O"/>
+  <has_product rdf:resource="#2H2"/>
+  <has_product rdf:resource="#O2"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#KClO3">
+  <rdf:type rdf:resource="#Reactant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#KCl">
+  <rdf:type rdf:resource="#Product"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
